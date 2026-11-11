@@ -10,13 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="ngegameyuk.css" />
+    <link rel="stylesheet" href="ProtoGame.css" />
   </head>
   <body>
     <main class="stage">
       <section class="card" aria-labelledby="title">
         <header class="mast">
-          <p class="eyebrow">Minigame · 1–100</p>
+          <div class="mast-top">
+            <p class="eyebrow">Minigame · 1–100</p>
+            <a class="back-link" href="../project.html#project-demo">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              <span>Kembali ke Project</span>
+            </a>
+          </div>
           <h1 id="title">Tebak Angka</h1>
           <p class="lede">
             Satu angka tersembunyi. Tujuh tebakan. Setiap petunjuk mempersempit
@@ -74,10 +82,13 @@
           <p class="result-kicker" id="result-kicker"></p>
           <p class="result-number" id="result-number"></p>
           <p class="result-copy" id="result-copy"></p>
-          <button class="primary" type="button" id="restart">Main lagi</button>
+          <div class="result-actions">
+            <button class="primary" type="button" id="restart">Main lagi</button>
+            <a class="result-back" href="../project.html#project-demo">Kembali ke Project</a>
+          </div>
         </div>
       </section>
     </main>
-    <script src="ngegameyuk.js"></script>
+    <script src="ProtoGame.js"></script>
   </body>
 </html>
