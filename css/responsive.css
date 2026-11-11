@@ -61,6 +61,12 @@
   .button-row { flex-direction: column; align-items: flex-start; }
   .site-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
   .page-indicator { align-self: flex-end; }
+
+  /* Sembunyikan foto diri beserta framenya pada bagian About ketika di HP */
+  .about-grid .photo-frame,
+  #cerita .photo-frame {
+    display: none;
+  }
 }
 
 @media (max-width: 820px) {
