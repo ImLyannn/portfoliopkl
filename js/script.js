@@ -40,13 +40,6 @@ function showPanel(id, pindah) {
     if (li && link.dataset.group) li.hidden = link.dataset.group !== grup;
   });
 
-  // tombol di bawah sidebar: dari demo kembali ke Home (#project), dari project lain kembali ke daftar Project Lainnya
-  const kembali = document.querySelector(".side-more");
-  if (kembali) {
-    kembali.setAttribute("href", grup === "demo" ? "index.html#project" : "project-lainnya.html");
-    kembali.textContent = "Kembali ke Project";
-  }
-
   sideLinks.forEach(function (link, i) {
     link.classList.toggle("is-active", i === index);
     if (i === index) link.setAttribute("aria-current", "page");
