@@ -239,10 +239,7 @@
 /* tombol di dalam kartu tidak melebar penuh */
 .card .btn { align-self: flex-start; margin-top: 8px; }
 
-/* ---------- Tambahan: ikon, logo, kontak, aksesibilitas ---------- */
 .i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.skip-link { position: absolute; left: 16px; top: -64px; z-index: 100; padding: 10px 18px; border-radius: 10px; background: var(--navy); color: #fff; font-weight: 600; transition: top 0.2s; }
-.skip-link:focus { top: 12px; }
 .brand-logo { position: relative; overflow: hidden; }
 .brand-logo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .brand-logo.has-image { background: #fff; border: 1px solid var(--line); }
